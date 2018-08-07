@@ -10,7 +10,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-        signingConfig signingConfigs.debug
+//        signingConfig signingConfigs.debug
     }
     buildTypes {
         release {
@@ -18,21 +18,21 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    //签名
-    signingConfigs {
-        debug {
-            storeFile file('E:/cgw/ascode/IWangZhePrj/IWangZhe/android.keystore')
-            storePassword "iwangzhe.com"
-            keyAlias "iwangzhe"
-            keyPassword "iwangzhe.com"
-        }
-        release {
-            storeFile file('E:/cgw/ascode/IWangZhePrj/IWangZhe/android.keystore')
-            storePassword "iwangzhe.com"
-            keyAlias "iwangzhe"
-            keyPassword "iwangzhe.com"
-        }
-    }
+//    //签名
+//    signingConfigs {
+//        debug {
+//            storeFile file('E:/cgw/ascode/IWangZhePrj/IWangZhe/android.keystore')
+//            storePassword "iwangzhe.com"
+//            keyAlias "iwangzhe"
+//            keyPassword "iwangzhe.com"
+//        }
+//        release {
+//            storeFile file('E:/cgw/ascode/IWangZhePrj/IWangZhe/android.keystore')
+//            storePassword "iwangzhe.com"
+//            keyAlias "iwangzhe"
+//            keyPassword "iwangzhe.com"
+//        }
+//    }
     productFlavors {
     }
 }

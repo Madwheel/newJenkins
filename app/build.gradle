@@ -17,6 +17,21 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    //签名
+    signingConfigs {
+        debug {
+            storeFile file('E:/cgw/ascode/IWangZhePrj/IWangZhe/android.keystore')
+            storePassword "iwangzhe.com"
+            keyAlias "iwangzhe"
+            keyPassword "iwangzhe.com"
+        }
+        release {
+            storeFile file('E:/cgw/ascode/IWangZhePrj/IWangZhe/android.keystore')
+            storePassword "iwangzhe.com"
+            keyAlias "iwangzhe"
+            keyPassword "iwangzhe.com"
+        }
+    }
 }
 
 dependencies {
